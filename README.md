@@ -1,29 +1,24 @@
-VSCODE-TODO-HIGHLIGHT
+VSCODE-JSON-COMMENTS-HIGHLIGHT
 ===
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/wayou/vscode-todo-highlight.svg?branch=master)](https://travis-ci.org/wayou/vscode-todo-highlight) [![Version](https://vsmarketplacebadge.apphb.com/version-short/wayou.vscode-todo-highlight.svg)](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/wayou.vscode-todo-highlight.svg)](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) [![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/wayou.vscode-todo-highlight.svg)](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![Build Status]
 
-Highlight `TODO`, `FIXME` and other annotations within your code.
+Highlight `\\` key comments in JSON files:
 
-Sometimes you forget to review the TODOs you've added while coding before you publish the code to production.
-So I've been wanting an extension for a long time that highlights them and reminds me that there are notes or things not done yet.
+e.g.
 
-Hope this extension helps you as well.
+```json
+{
+    "\\": "This is a good way to add a comment"
+}
+```
 
 *NOTICE*
 
-Many report that the `List highlighted annotations` command is not working, make sure you have the file types included via `todohighlight.include`.
+Credit for the base of this package goes to github user [wayou](https://github.com/wayou) as it is forked from his [TODO highlighter package](https://github.com/wayou/vscode-todo-highlight)
 
 
-### Preview
-
-- with `material night` color theme:
-![](https://github.com/wayou/vscode-todo-highlight/raw/master/assets/material-night.png)
-
-- with `material night eighties` color theme:
-![](https://github.com/wayou/vscode-todo-highlight/raw/master/assets/material-night-eighties.png)
-
-### Config
+### Config- TODO: REWRITE THE BELOW
 
 `TODO:`,`FIXME:` are built-in keywords. You can override the look by customizing the setting.
 

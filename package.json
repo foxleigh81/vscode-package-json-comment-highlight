@@ -1,26 +1,23 @@
 {
-    "name": "vscode-todo-highlight",
-    "displayName": "TODO Highlight",
-    "description": "highlight TODOs, FIXMEs, and any keywords, annotations...",
+    "name": "vscode-json-comment-highlight",
+    "displayName": "JSON comment highlighter",
+    "description": "highlight // Key comments in JSON files",
     "keywords": [
-        "todo",
-        "fixme",
         "highlight",
-        "keyword",
-        "annotation"
+        "json",
+        "key comments"
     ],
-    "version": "0.5.12",
-    "publisher": "wayou",
+    "version": "0.1.0",
+    "publisher": "foxleigh81",
     "license": "MIT",
     "icon": "assets/icon.png",
-    "homepage": "https://github.com/wayou/vscode-todo-highlight",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wayou/vscode-todo-highlight.git"
+        "url": "https://github.com/foxleigh81/vscode-package-json-comment-highlight.git"
     },
     "bugs": {
-        "url": "https://github.com/wayou/vscode-todo-highlight/issues",
-        "email": "liuwayong@gmail.com"
+        "url": "https://github.com/foxleigh81/vscode-package-json-comment-highlight/issues",
+        "email": "foxleigh81@gmail.com"
     },
     "galleryBanner": {
         "color": "#272729",
@@ -45,27 +42,7 @@
             "url": "https://img.shields.io/badge/License-MIT-brightgreen.svg",
             "href": "https://opensource.org/licenses/MIT",
             "description": "License: MIT"
-        },
-        {
-            "url": "https://travis-ci.org/wayou/vscode-todo-highlight.svg?branch=master",
-            "href": "https://travis-ci.org/wayou/vscode-todo-highlight",
-            "description": "Build Status"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/version-short/wayou.vscode-todo-highlight.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight",
-            "description": "Version"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/installs-short/wayou.vscode-todo-highlight.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight",
-            "description": "Installs"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/rating-short/wayou.vscode-todo-highlight.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight",
-            "description": "Ratings"
-        }
+        }    
     ],
     "contributes": {
         "commands": [
@@ -157,14 +134,10 @@
                 "todohighlight.include": {
                     "type": "array",
                     "default": [
+                        "**/*.json",
                         "**/*.js",
-                        "**/*.jsx",
                         "**/*.ts",
-                        "**/*.tsx",
-                        "**/*.html",
-                        "**/*.php",
-                        "**/*.css",
-                        "**/*.scss"
+                        "**/*.jsx"
                     ],
                     "description": "Glob patterns that defines the files to search for. Only include files you need, DO NOT USE `{**/*.*}` for both permormance and avoiding binary files reason.",
                     "items": {
